@@ -27,10 +27,10 @@ class PerfilAcademico extends StatefulWidget {
   const PerfilAcademico({super.key});
 
   @override
-  State<PerfilAcademico> createState() => _PerfilAcademicoState();
+  State createState() => _PerfilAcademicoState();
 }
 
-class _PerfilAcademicoState extends State<PerfilAcademico> {
+class _PerfilAcademicoState extends State {
 
   // Variables solicitadas en el trabajo
   String nombre = 'Yordany Choquemamani';
@@ -64,7 +64,7 @@ class _PerfilAcademicoState extends State<PerfilAcademico> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(nombre),
+        title: Text('$nombre - Versión 2'),
         centerTitle: true,
       ),
 
@@ -213,7 +213,7 @@ class _PerfilAcademicoState extends State<PerfilAcademico> {
                           child: Text('$i'),
                         ),
                         title: Text(
-                          '$numeroPersonal × $i = ${numeroPersonal * i}',
+                          '\(numeroPersonal ×\)i = ${numeroPersonal * i}',
                           style: const TextStyle(fontSize: 17),
                         ),
                       ),
