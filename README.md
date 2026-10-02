@@ -1,4 +1,4 @@
-# mi_primera_app
+# mi_perfil_academico_interactivo_01
 
 A new Flutter project.
 
